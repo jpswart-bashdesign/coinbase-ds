@@ -64,7 +64,7 @@ export const ButtonGroup = memo(function ButtonGroup({
         child ? (
           <li className={cx(itemCss, block && fillCss)}>
             {cloneElement(child, {
-              block: block || isVertical,
+              block,
             })}
           </li>
         ) : null,

@@ -208,11 +208,11 @@ export const Button: ButtonComponent = memo(
         // TO DO: get rid of this height and interactableHeight (mobile and web both)
         height = compact ? 40 : 56,
         borderColor,
-        borderWidth = 100,
-        borderRadius = compact ? 700 : 900,
+        borderWidth = 0,
+        borderRadius = 1000,
         accessibilityLabel,
         padding,
-        paddingX = padding ?? (compact ? 2 : 4),
+        paddingX = padding ?? (compact ? 2 : 3),
         margin = 0,
         minWidth = compact ? 'auto' : DEFAULT_MIN_WIDTH,
         ...props
